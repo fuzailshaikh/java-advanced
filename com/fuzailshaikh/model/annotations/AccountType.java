@@ -1,4 +1,4 @@
-package com.fuzailshaikh.model;
+package com.fuzailshaikh.model.annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
@@ -7,6 +7,6 @@ import java.lang.annotation.RetentionPolicy;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface Marker {
-	String type() default "School";
+public @interface AccountType {
+	String type() default "Standard";
 }
